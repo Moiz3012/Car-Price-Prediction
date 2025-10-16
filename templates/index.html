@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Price Prediction</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚗 Car Price Prediction</h1>
+      <form action="/predict" method="post">
+        <input
+          type="text"
+          name="Car_Name"
+          placeholder="Car Name"
+          required
+        /><br />
+        <input type="number" name="Year" placeholder="Year" required /><br />
+        <input
+          type="number"
+          name="Present_Price"
+          placeholder="Present Price (in Lakhs)"
+          step="0.01"
+          required
+        /><br />
+        <input
+          type="number"
+          name="Kms_Driven"
+          placeholder="Kms Driven"
+          required
+        /><br />
+
+        <select name="Fuel_Type">
+          <option value="Petrol">Petrol</option>
+          <option value="Diesel">Diesel</option>
+          <option value="CNG">CNG</option></select
+        ><br />
+
+        <select name="Seller_Type">
+          <option value="Dealer">Dealer</option>
+          <option value="Individual">Individual</option></select
+        ><br />
+
+        <select name="Transmission">
+          <option value="Manual">Manual</option>
+          <option value="Automatic">Automatic</option></select
+        ><br />
+
+        <input
+          type="number"
+          name="Owner"
+          placeholder="Number of Owners"
+          required
+        /><br />
+
+        <button type="submit">Predict Price</button>
+      </form>
+
+      {% if prediction_text %}
+      <div class="result">{{ prediction_text }}</div>
+      {% endif %}
+    </div>
+  </body>
+</html>
