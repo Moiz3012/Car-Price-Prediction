@@ -21,7 +21,7 @@ It’s built using **Flask (Python)** for the backend and a simple **HTML/CSS fr
 - **Model:** Linear Regression (from scratch)
 
 ---
-##Screenshot
+## Screenshot
 
 <img width="962" height="630" alt="image" src="https://github.com/user-attachments/assets/d75113ec-17ba-4b49-873d-aabd123735e8" />
 
