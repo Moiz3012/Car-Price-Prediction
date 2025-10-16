@@ -21,6 +21,9 @@ It’s built using **Flask (Python)** for the backend and a simple **HTML/CSS fr
 - **Model:** Linear Regression (from scratch)
 
 ---
+##Screenshot
+
+<img width="962" height="630" alt="image" src="https://github.com/user-attachments/assets/d75113ec-17ba-4b49-873d-aabd123735e8" />
 
 ## 🚀 How to Run Locally
 
@@ -29,6 +32,4 @@ It’s built using **Flask (Python)** for the backend and a simple **HTML/CSS fr
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 
-##Screenshot
 
-<img width="962" height="630" alt="image" src="https://github.com/user-attachments/assets/d75113ec-17ba-4b49-873d-aabd123735e8" />
